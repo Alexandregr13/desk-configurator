@@ -1,0 +1,28 @@
+.safe-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.option-row label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.option-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.option-row select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}

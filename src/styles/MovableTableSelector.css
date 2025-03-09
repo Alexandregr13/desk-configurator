@@ -1,0 +1,51 @@
+.movable-table-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.option-row label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.option-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.option-row select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.position-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.position-buttons button {
+  padding: 8px 15px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.position-buttons button:hover {
+  background-color: #ddd;
+}
+
+.position-buttons button.selected {
+  background-color: #2c3e50;
+  color: white;
+  border-color: #2c3e50;
+}

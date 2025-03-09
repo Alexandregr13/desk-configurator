@@ -1,0 +1,58 @@
+.texture-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.texture-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.texture-option:hover {
+  transform: scale(1.05);
+}
+
+.texture-option.selected {
+  font-weight: bold;
+}
+
+.texture-option.selected .texture-preview {
+  border: 3px solid #2c3e50;
+}
+
+.texture-preview {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Textures (simulées avec des couleurs/motifs) */
+.oak-texture {
+  background-color: #b68c5d;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0 0h100v100H0z" fill="%23b68c5d"/><path d="M0 10h100M0 30h100M0 50h100M0 70h100M0 90h100" stroke="%23a67c4d" stroke-width="2"/></svg>');
+}
+
+.walnut-texture {
+  background-color: #5d4037;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0 0h100v100H0z" fill="%235d4037"/><path d="M0 20h100M0 40h100M0 60h100M0 80h100" stroke="%234d3027" stroke-width="2"/></svg>');
+}
+
+.maple-texture {
+  background-color: #e8d4b9;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0 0h100v100H0z" fill="%23e8d4b9"/><path d="M0 15h100M0 35h100M0 55h100M0 75h100M0 95h100" stroke="%23d8c4a9" stroke-width="1"/></svg>');
+}
+
+.glass-texture {
+  background-color: rgba(200, 230, 255, 0.6);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.metal-texture {
+  background: linear-gradient(135deg, #888 0%, #eee 50%, #888 100%);
+}
